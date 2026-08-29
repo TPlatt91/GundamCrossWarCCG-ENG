@@ -262,6 +262,10 @@ symbol:
 	image: AbilityOz.png
 
 symbol:
+	code: (phantompain)
+	image: AbilityPhantomPain.png
+
+symbol:
 	code: (zaku)
 	image: AbilityZaku.png
 
@@ -670,6 +674,7 @@ insert symbol menu:
 		item: (noisyfairy)
 		item: (operationmeteor)
 		item: (oz)
+		item: (phantompain)
 		item: (redwolves)
 		item: (tekkadan)
 		item: (titans)
