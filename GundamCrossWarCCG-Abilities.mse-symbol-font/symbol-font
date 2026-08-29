@@ -254,6 +254,10 @@ symbol:
 	image: AbilityMazellaAttack.png
 
 symbol:
+	code: (mf)
+	image: AbilityMF.png
+
+symbol:
 	code: (operationmeteor)
 	image: AbilityOpMeteor.png
 
@@ -670,6 +674,7 @@ insert symbol menu:
 		item: (gunpla)
 		item: (londobell)
 		item: (magellaattack)
+		item: (mf)
 		item: (neozeon)
 		item: (noisyfairy)
 		item: (operationmeteor)
