@@ -7,7 +7,7 @@ depends on:
 
 image font size: 30
 scale text: true
-horizontal space: -5
+horizontal space: -2
 
 ##### Timings
 symbol:
