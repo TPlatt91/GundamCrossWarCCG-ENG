@@ -186,6 +186,34 @@ symbol:
 
 ##### Ability Keywords
 symbol:
+	code: (armament)
+	image: AbilityArmament.png
+
+symbol:
+	code: (specialtrait)
+	image: AbilitySpecialTrait.png
+
+symbol:
+	code: (slash)
+	image: AbilitySlash.png
+
+symbol:
+	code: (small)
+	image: AbilitySmall.png
+
+symbol:
+	code: (medium)
+	image: AbilityMedium.png
+
+symbol:
+	code: (large)
+	image: AbilityLarge.png
+
+symbol:
+	code: (consumestock)
+	image: AbilityConsumeStock.png
+
+symbol:
 	code: (aeug)
 	image: AbilityAEUG.png
 
@@ -246,6 +274,10 @@ symbol:
 	image: AbilityGunpla.png
 
 symbol:
+	code: (innovator)
+	image: AbilityInnovator.png
+
+symbol:
 	code: (londobell)
 	image: AbilityLondoBell.png
 
@@ -260,6 +292,10 @@ symbol:
 symbol:
 	code: (operationmeteor)
 	image: AbilityOpMeteor.png
+
+symbol:
+	code: (orb)
+	image: AbilityOrb.png
 
 symbol:
 	code: (oz)
@@ -615,12 +651,15 @@ insert symbol menu:
 		item: (startingmain)
 	item:
 		name: Abilities
+		item: (armament)
+		item: (specialtrait)
 		item: (armedintervention)
 		item: (armor)
 		item: (bit)
 		item: (bombard)
 		item: (bug)
 		item: (compatibility)
+		item: (consumestock)
 		item: (control)
 		item: (counter)
 		item: (counterattack)
@@ -657,6 +696,10 @@ insert symbol menu:
 	item:	
 		name: Compatibility
 		item: (+)
+		item: (slash)
+		item: (small)
+		item: (medium)
+		item: (large)
 		item: (aeug)
 		item: (amphibious)
 		item: (celestialbeing)
@@ -672,12 +715,14 @@ insert symbol menu:
 		item: (groundtype)
 		item: (gundam)
 		item: (gunpla)
+		item: (innovator)
 		item: (londobell)
 		item: (magellaattack)
 		item: (mf)
 		item: (neozeon)
 		item: (noisyfairy)
 		item: (operationmeteor)
+		item: (orb)
 		item: (oz)
 		item: (phantompain)
 		item: (redwolves)
