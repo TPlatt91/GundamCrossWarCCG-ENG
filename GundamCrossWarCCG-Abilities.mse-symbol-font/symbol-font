@@ -194,6 +194,14 @@ symbol:
 	image: AbilitySpecialTrait.png
 
 symbol:
+	code: (cardname)
+	image: AbilityCardName.png
+
+symbol:
+	code: (totalcost)
+	image: AbilityTotalCost.png
+
+symbol:
 	code: (slash)
 	image: AbilitySlash.png
 
@@ -266,6 +274,10 @@ symbol:
 	image: AbilityGroundType.png
 
 symbol:
+	code: (gp)
+	image: AbilityGP.png
+
+symbol:
 	code: (gundam)
 	image: AbilityGundam.png
 
@@ -276,6 +288,10 @@ symbol:
 symbol:
 	code: (innovator)
 	image: AbilityInnovator.png
+
+symbol:
+	code: (leaguemillitaire)
+	image: AbilityLeagueMillitaire.png
 
 symbol:
 	code: (londobell)
@@ -304,6 +320,14 @@ symbol:
 symbol:
 	code: (phantompain)
 	image: AbilityPhantomPain.png
+
+symbol:
+	code: (shufflealliance)
+	image: AbilityShuffleAlliance.png
+
+symbol:
+	code: (t3unit)
+	image: AbilityT3Unit.png
 
 symbol:
 	code: (zaku)
@@ -340,6 +364,14 @@ symbol:
 symbol:
 	code: (turbines)
 	image: AbilityTurbines.png
+
+symbol:
+	code: (wizardsystem)
+	image: AbilityWizardSystem.png
+
+symbol:
+	code: (zeong)
+	image: AbilityZeong.png
 
 
 ##### Ability Numbers
@@ -653,6 +685,8 @@ insert symbol menu:
 		name: Abilities
 		item: (armament)
 		item: (specialtrait)
+		item: (cardname)
+		item: (totalcost)
 		item: (armedintervention)
 		item: (armor)
 		item: (bit)
@@ -666,12 +700,14 @@ insert symbol menu:
 		item: (customfunnel)
 		item: (finfunnel)
 		item: (funnel)
+		item: (gp)
 		item: (guard)
 		item: (intercept)
 		item: (invade)
 		item: (largefunnel)
 		item: (largefunnelbits)
 		item: (lastdefense)
+		item: (leaguemillitaire)
 		item: (ma)
 		item: (morale)
 		item: (oggo)
@@ -681,10 +717,14 @@ insert symbol menu:
 		item: (rosebit)
 		item: (sabotage)
 		item: (scramble)
+		item: (shufflealliance)
+		item: (t3unit)
 		item: (dragoon)
 		item: (suppression)
 		item: (transform)
 		item: (uwa)
+		item: (wizardsystem)
+		item: (zeong)
 		item: (zeonghead)
 	item:
 		name: Color
