@@ -11,25 +11,25 @@ depends on:	GundamCrossWarCCG-Cost.mse-symbol-font 2023-12-04
 depends on:	GundamCrossWarCCG-Counter.mse-symbol-font 2023-12-04
 depends on:	GundamCrossWarCCG-Abilities.mse-symbol-font 2023-12-04
 
-card width:	750
-card height:	1046
-card dpi:	600
+card width:	822
+card height:	1122
+card dpi:	300
 
 
 init script:
-	Image		:=	{ if contains(card.rarity, match: "Collection") then "CR" + if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"else if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"}
-	commonstart	:=	{ if card.type == "Crew" and card.multicolor =="" then "135" else "35"}
-	commonhide	:=	{"760"}
-	commonwidth	:=	{ if card.type == "Crew" and card.multicolor =="" then "480" else "580"}	
+	Image		:=	{ input + "/"+ if contains(card.rarity, match: "Collection") then "CR" + if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"else if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"}
+	commonstart	:=	{ if card.type == "Crew" and card.multicolor =="" then "135" else "72"}
+	commonhide	:=	{"830"}
+	commonwidth	:=	{ if card.type == "Crew" and card.multicolor =="" then "510" else "580"}	
 	cardtextbtm	:= 	{case card.type of
-					"Unit":		"870",
-					"Event":	"940",
-					"Counter":	"940",
-					"Crew":		"870",
-					"Warship":	"900",
-					"Pilot":	"870",
-					"Armament":	"870",
-					else:		"885"
+					"Event":	"976",
+					"Counter":	"976",
+					"Warship":	"936",
+					"Crew":		"906",
+					"Unit":		"906",
+					"Pilot":	"906",
+					"Armament":	"906",
+					else:		"921"
 				}
 	cardtextheight	:=	{case card.type of
 					"Unit":		"270",
@@ -80,8 +80,8 @@ init script:
 
 card style:
 	color:
-		left:			686
-		top:			26
+		left:			722
+		top:			62
 		width:			150
 		alignment:		right
 		height:			{if card.type=="Crew" then "28" else "56"}
@@ -90,8 +90,8 @@ card style:
 		visible:		{if card.type == "Pilot" or card.type== "Armament" then "false" else "true"}
 card style:
 	multicolor:
-		left:			{if card.type=="Crew" then "686" else commonhide()}
-		top:			55
+		left:			{if card.type=="Crew" then "722" else commonhide()}
+		top:			91
 		width:			150
 		alignment:		right
 		height:			28
@@ -102,8 +102,8 @@ card style:
 
 card style:
 	type:
-		left:			0
-		top:			0
+		left:			36
+		top:			36
 		width:			750
 		height:			1046
 		z index: 		2
@@ -113,31 +113,31 @@ card style:
 
 card style:
 	size:
-		left:			653
+		left:			689
+		top:			766
 		width:			32
-		top:			730
 		height:			32
 		z index:		21
 		visible:		true
 		popup style:		in place
 		render style:		image
-		image:			{input + "Icon.png"}
+		image:			{"Icons/" + input + "Icon.png"}
 
 card style:
 	rarity:
 		render style: image
-		left:			639
-		top:			777
+		left:			655
+		top:			813
 		width:			114
 		height:			69
 		z index: 		30
-		image:			{input + "Rarity.png"}
+		image:			{"Rarity/"+input + "Rarity.png"}
 
 
 card style:
 	casting cost:
-		left:			{if card.type == "Crew" or card.type == "Armament" or card.type == "Pilot" then commonhide() else "20"}
-		top:			15
+		left:			{if card.type == "Crew" or card.type == "Armament" or card.type == "Pilot" then commonhide() else "56"}
+		top:			51
 		width:			150
 		height:			55
 		z index:		22
@@ -155,8 +155,8 @@ card style:
 
 card style:
 	counter_cost:
-		left:			{if card.type == "Counter" then "142" else commonhide()}
-		top:			723
+		left:			{if card.type == "Counter" then "178" else commonhide()}
+		top:			759
 		width:			144
 		height:			42
 		z index:		25
@@ -173,8 +173,8 @@ card style:
 
 card style:
 	name:
-		left:			265
-		top:			25
+		left:			301
+		top:			61
 		width:			418
 		height:			50
 		z index:		21
@@ -187,12 +187,12 @@ card style:
 
 card style:
 	image:
-		left:			0
-		top:			{if card.type == "Unit" or card.type == "Pilot" or card.type == "Warship" then "0" else if card.type == "Armament" then "149" else if card.type == "Event" then "120" else if card.type == "Counter" then "120" else if card.type == "Crew" and contains(card.rarity, match: "Fullart") then "0" else if card.type == "Crew" and contains(card.rarity, match: "Collection") then "155" else if card.type == "Crew" then "149" else "79"}
+		left:			36
+		top:			{if card.type == "Unit" or card.type == "Pilot" or card.type == "Warship" then "36" else if card.type == "Armament" then "185" else if card.type == "Event" then "156" else if card.type == "Counter" then "156" else if card.type == "Crew" and contains(card.rarity, match: "Fullart") then "36" else if card.type == "Crew" and contains(card.rarity, match: "Collection") then "191" else if card.type == "Crew" then "185" else "115"}
 		width:			750
 		height:			{if card.type == "Unit" then "954" else if card.type == "Pilot" then "954" else if card.type == "Armament" then "805" else if card.type == "Event" then "541" else if card.type == "Counter" then "541" else if card.type == "Crew" and contains(card.rarity, match: "Fullart") then "954" else if card.type == "Crew" and contains(card.rarity, match: "Collection") then "799" else if card.type == "Crew" then "580" else if card.type == "Warship" then "954" else  "526"}
 		z index:		11
-		mask:			{ if contains(card.rarity, match: "Collection") then "CR" + card.type +"mask.png" else card.type +"mask.png"}
+		mask:			{ "Masks/"+ if contains(card.rarity, match: "Collection") then "CR" + card.type +"mask.png" else card.type +"mask.png"}
 
 ####################### Text box
 
@@ -224,8 +224,8 @@ card style:
 card style:
 	power:
 		visible: {if card.type == "Unit" or card.type == "Pilot" or card.type == "Armament" or card.type =="Warship" then "true" else "false"}
-		left:			{ if card.type == "Warship" then "455" else "39"}
-		top:			{ if card.type == "Warship" then "910" else "900"}
+		left:			{ if card.type == "Warship" then "491" else "75"}
+		top:			{ if card.type == "Warship" then "946" else "936"}
 		width:			{ if card.type == "Warship" then "100" else "117"}
 		height:			{ if card.type == "Warship" then "85" else "105"}
 		alignment:		center middle
@@ -239,8 +239,8 @@ card style:
 card style:
 	toughness:
 		visible: {if card.type == "Unit" or card.type == "Pilot" or card.type == "Armament" or card.type =="Warship" then "true" else "false"}
-		left:			594
-		top:			900
+		left:			630
+		top:			936
 		width:			117
 		height:			105
 		alignment:		center middle
@@ -254,9 +254,9 @@ card style:
 
 card style:
 	characteristic:
-		left:			{ if card.type=="Warship" then "100" else "200"}
+		left:			{ if card.type=="Warship" then "136" else "236"}
 		visible:		{ if card.type!="Event" or card.type!="Counter" then "true" else "false"}
-		top:			956
+		top:			992
 		width:			350
 		height:			32
 		z index:		30
@@ -273,8 +273,8 @@ card style:
 
 card style:
 	card_number:
-		left:			{ if card.type == "Warship" then "445" else "535"}
-		bottom:			1046
+		left:			{ if card.type == "Warship" then "481" else "571"}
+		bottom:			1082
 		width:			80
 		height:			20
 		z index:		20
@@ -286,8 +286,8 @@ card style:
 
 card style:
 	season:
-		left:			{ if card.type == "Warship" then "30" else "180"}
-		top:			1020
+		left:			{ if card.type == "Warship" then "66" else "216"}
+		top:			1056
 		width:			300
 		height:			20
 		z index:		20
@@ -299,8 +299,8 @@ card style:
 
 card style:
 	topnote:
-		left:			{ if card.type == "Warship" then "30" else "180"}
-		top:			995
+		left:			{ if card.type == "Warship" then "66" else "216"}
+		top:			1031
 		width:			300
 		height:			25
 		z index:		21
@@ -311,8 +311,8 @@ card style:
 			color:				white
 card style:
 	illustrator:
-		right:			723
-		bottom:			700
+		right:			759
+		bottom:			736
 		width:			435
 		height:			20
 		z index:		21
@@ -324,8 +324,8 @@ card style:
 			color:				White
 card style:
 	illustrator2:
-		right:			723
-		bottom:			700
+		right:			759
+		bottom:			736
 		width:			435
 		height:			20
 		z index:		20
@@ -360,8 +360,8 @@ extra card field:
 
 extra card style:
 	pt box:
-		left:			494
-		top:			938
+		left:			530
+		top:			974
 		width:			218
 		height:			76
 		z index:		3

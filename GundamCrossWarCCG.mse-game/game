@@ -277,11 +277,11 @@ card field:
 	choice:		SpecialRare
 		enabled: {card.type!="Warship"}
 	choice:		CollectionCommon
-		enabled: {card.type=="Crew"}
+		enabled: {card.type=="Crew" or card.type=="Pilot" or card.type=="Armament"}
 	choice:		CollectionCrossRare
-		enabled: {card.type=="Unit"}
+		enabled: {card.type=="Unit" or card.type=="Pilot" or card.type=="Armament"}
 	choice:		CollectionSpecialRare
-		enabled: {card.type=="Unit"}
+		enabled: {card.type=="Unit" or card.type=="Pilot" or card.type=="Armament"}
 	choice:		Promo
 	choice:	
 		name:	Warship
