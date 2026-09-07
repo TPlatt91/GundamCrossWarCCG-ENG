@@ -17,7 +17,6 @@ card dpi:	300
 
 
 init script:
-	Image		:=	{ input + "/"+ if contains(card.rarity, match: "Collection") then "CR" + if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"else if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"}
 	commonstart	:=	{ if card.type == "Crew" and card.multicolor =="" then "135" else "72"}
 	commonhide	:=	{"830"}
 	commonwidth	:=	{ if card.type == "Crew" and card.multicolor =="" then "510" else "580"}	
@@ -73,6 +72,14 @@ init script:
 					else: "black",
 				else: "white"
 				}
+	raritymarker	:= {case card.rarity of
+					"FullartCommon": "FA",
+					"CollectionCommon": "CR",
+					"CollectionCrossRare": "CR",
+					"CollectionSpecialRare": "CR",
+					else: ""
+					}
+	Image		:=	{ input + "/"+ raritymarker() + if card.type == "Pilot" or card.type == "Armament" then input + ".png" else if card.multicolor != "" then card.multicolor + input + ".png" else card.color + input + ".png"}
 
 	
 
@@ -192,7 +199,7 @@ card style:
 		width:			750
 		height:			{if card.type == "Unit" then "954" else if card.type == "Pilot" then "954" else if card.type == "Armament" then "805" else if card.type == "Event" then "541" else if card.type == "Counter" then "541" else if card.type == "Crew" and contains(card.rarity, match: "Fullart") then "954" else if card.type == "Crew" and contains(card.rarity, match: "Collection") then "799" else if card.type == "Crew" then "580" else if card.type == "Warship" then "954" else  "526"}
 		z index:		11
-		mask:			{ "Masks/"+ if contains(card.rarity, match: "Collection") then "CR" + card.type +"mask.png" else card.type +"mask.png"}
+		mask:			{ "Masks/" + raritymarker() + card.type +"mask.png"}
 
 ####################### Text box
 
