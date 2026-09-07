@@ -176,6 +176,10 @@ symbol:
 	image: AbilityArmor.png
 
 symbol:
+	code: (tsc)
+	image:AbilityTwinSatelliteCannon.png
+
+symbol:
 	code: (armedintervention)
 	image: AbilityArmedIntervention.png
 
@@ -248,6 +252,10 @@ symbol:
 symbol:
 	code: (delazfleet)
 	image: AbilityDelazFleet.png
+
+symbol:
+	code: (examsystem)
+	image: AbilityExamSystem.png
 
 symbol:
 	code: (federation)
@@ -415,6 +423,10 @@ symbol:
 symbol:
 	code: (a9)
 	image: Ability9.png
+
+symbol:
+	code: (a10)
+	image: Ability10.png
 
 symbol:
 	code: (ax)
@@ -718,13 +730,12 @@ insert symbol menu:
 		item: (sabotage)
 		item: (scramble)
 		item: (shufflealliance)
-		item: (t3unit)
+		item: (tsc)
 		item: (dragoon)
 		item: (suppression)
 		item: (transform)
 		item: (uwa)
 		item: (wizardsystem)
-		item: (zeong)
 		item: (zeonghead)
 	item:
 		name: Color
@@ -746,6 +757,7 @@ insert symbol menu:
 		item: (crossbonevanguard)
 		item: (dom)
 		item: (delazfleet)
+		item: (examsystem)
 		item: (federation)
 		item: (frostbrothers)
 		item: (gearadoga)
@@ -768,10 +780,12 @@ insert symbol menu:
 		item: (redwolves)
 		item: (tekkadan)
 		item: (titans)
+		item: (t3unit)
 		item: (turbines)
 		item: (zaft)
 		item: (zaku)
 		item: (zeon)
+		item: (zeong)
 	item:
 		name: Ability Numbers
 		item:	(()
@@ -787,6 +801,7 @@ insert symbol menu:
 			item: (a7)
 			item: (a8)
 			item: (a9)
+			item: (a10)
 			item: (ax)
 		item:
 			name: Modifier
