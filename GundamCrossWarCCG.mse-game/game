@@ -244,13 +244,13 @@ card field:
 		enabled: {card.multicolor==""}
 	choice:	
 		name:	Warship
-		enabled: {card.multicolor=="" and not(contains(card.rarity, match: "Collection"))}
+		enabled: {card.multicolor==""}
 	choice:	
 		name:	Pilot
 		enabled: {card.multicolor==""}
 	choice:	
 		name:	Armament
-		enabled: {card.multicolor=="" and not(contains(card.rarity, match: "Collection"))}
+		enabled: {card.multicolor==""}
 	description:		The type and layout of the card.
 	card list visible:	true
 	card list column:	4
