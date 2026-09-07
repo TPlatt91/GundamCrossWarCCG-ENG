@@ -75,6 +75,8 @@ init script:
 	raritymarker	:= {case card.rarity of
 					"FullartCommon": "FA",
 					"CollectionCommon": "CR",
+					"CollectionRare": "CR",
+					"CollectionDoubleRare": "CR",
 					"CollectionCrossRare": "CR",
 					"CollectionSpecialRare": "CR",
 					else: ""

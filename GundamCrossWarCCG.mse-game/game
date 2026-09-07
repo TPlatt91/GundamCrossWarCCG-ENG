@@ -278,6 +278,10 @@ card field:
 		enabled: {card.type!="Warship"}
 	choice:		CollectionCommon
 		enabled: {card.type=="Crew" or card.type=="Pilot" or card.type=="Armament"}
+	choice:		CollectionRare
+		enabled: {card.type=="Unit" or card.type=="Pilot" or card.type=="Armament"}
+	choice:		CollectionDoubleRare
+		enabled: {card.type=="Unit" or card.type=="Pilot" or card.type=="Armament"}
 	choice:		CollectionCrossRare
 		enabled: {card.type=="Unit" or card.type=="Pilot" or card.type=="Armament"}
 	choice:		CollectionSpecialRare
