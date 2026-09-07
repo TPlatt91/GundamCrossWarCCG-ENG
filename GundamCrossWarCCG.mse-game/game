@@ -286,6 +286,9 @@ card field:
 	choice:	
 		name:	Warship
 		enabled: {card.type=="Warship"}
+	choice:
+		name:	CollectionWarship
+		enabled: {card.type=="Warship"}
 	default:	defaultrarity(card.type)
 	description:	The rarity of the card.
 
