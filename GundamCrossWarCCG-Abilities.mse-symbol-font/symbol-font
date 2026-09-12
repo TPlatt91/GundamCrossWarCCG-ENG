@@ -266,6 +266,14 @@ symbol:
 	image: AbilityFrostBrothers.png
 
 symbol:
+	code: (g-saviour)
+	image: AbilityG-Saviour.png
+
+symbol:
+	code: (gaea)
+	image: AbilityGaea.png
+
+symbol:
 	code: (gearadoga)
 	image: AbilityGearaDoga.png
 
@@ -290,12 +298,24 @@ symbol:
 	image: AbilityGundam.png
 
 symbol:
+	code: (gund-arm)
+	image: AbilityGund-arm.png
+
+symbol:
 	code: (gunpla)
 	image: AbilityGunpla.png
 
 symbol:
+	code: (illuminati)
+	image: AbilityIlluminati.png
+
+symbol:
 	code: (innovator)
 	image: AbilityInnovator.png
+
+symbol:
+	code: (invisibleknights)
+	image: AbilityInvisibleKnights.png
 
 symbol:
 	code: (leaguemillitaire)
@@ -312,6 +332,11 @@ symbol:
 symbol:
 	code: (mf)
 	image: AbilityMF.png
+
+symbol:
+	code: (moonmoon)
+	image: AbilityMoonMoon.png
+
 
 symbol:
 	code: (operationmeteor)
@@ -336,6 +361,14 @@ symbol:
 symbol:
 	code: (t3unit)
 	image: AbilityT3Unit.png
+
+symbol:
+	code: (thoroughbred)
+	image: AbilityThoroughbred.png
+
+symbol:
+	code: (whitedingo)
+	image: AbilityWhiteDingo.png
 
 symbol:
 	code: (zaku)
@@ -760,17 +793,23 @@ insert symbol menu:
 		item: (examsystem)
 		item: (federation)
 		item: (frostbrothers)
+		item: (g-saviour)
+		item: (gaea)
 		item: (gearadoga)
 		item: (ginn)
 		item: (gjallarhorn)
 		item: (graze)
 		item: (groundtype)
 		item: (gundam)
+		item: (gund-arm)
 		item: (gunpla)
+		item: (illuminati)
 		item: (innovator)
+		item: (invisibleknights)
 		item: (londobell)
 		item: (magellaattack)
 		item: (mf)
+		item: (moonmoon)
 		item: (neozeon)
 		item: (noisyfairy)
 		item: (operationmeteor)
@@ -779,9 +818,11 @@ insert symbol menu:
 		item: (phantompain)
 		item: (redwolves)
 		item: (tekkadan)
+		item: (thoroughbred)
 		item: (titans)
 		item: (t3unit)
 		item: (turbines)
+		item: (whitedingo)
 		item: (zaft)
 		item: (zaku)
 		item: (zeon)
