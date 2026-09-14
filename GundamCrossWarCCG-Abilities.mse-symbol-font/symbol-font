@@ -254,6 +254,10 @@ symbol:
 	image: AbilityDelazFleet.png
 
 symbol:
+	code: (efreet)
+	image: AbilityEfreet.png
+
+symbol:
 	code: (examsystem)
 	image: AbilityExamSystem.png
 
@@ -264,6 +268,10 @@ symbol:
 symbol:
 	code: (frostbrothers)
 	image: AbilityFrostBrothers.png
+
+symbol:
+	code: (g04)
+	image: AbilityG04.png
 
 symbol:
 	code: (g-saviour)
@@ -306,6 +314,10 @@ symbol:
 	image: AbilityGunpla.png
 
 symbol:
+	code: (hydragundam)
+	image: AbilityHydraGundam.png
+
+symbol:
 	code: (illuminati)
 	image: AbilityIlluminati.png
 
@@ -337,6 +349,9 @@ symbol:
 	code: (moonmoon)
 	image: AbilityMoonMoon.png
 
+symbol:
+	code: (moongundam)
+	image: AbilityMoonGundam.png
 
 symbol:
 	code: (operationmeteor)
@@ -790,9 +805,11 @@ insert symbol menu:
 		item: (crossbonevanguard)
 		item: (dom)
 		item: (delazfleet)
+		item: (efreet)
 		item: (examsystem)
 		item: (federation)
 		item: (frostbrothers)
+		item: (g04)
 		item: (g-saviour)
 		item: (gaea)
 		item: (gearadoga)
@@ -803,12 +820,14 @@ insert symbol menu:
 		item: (gundam)
 		item: (gund-arm)
 		item: (gunpla)
+		item: (hydragundam)
 		item: (illuminati)
 		item: (innovator)
 		item: (invisibleknights)
 		item: (londobell)
 		item: (magellaattack)
 		item: (mf)
+		item: (moongundam)
 		item: (moonmoon)
 		item: (neozeon)
 		item: (noisyfairy)
